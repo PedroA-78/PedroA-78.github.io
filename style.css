@@ -80,32 +80,31 @@ nav ul li a:hover {
 
 .card_banner {
     width: 90%;
-    height: 700px;
     margin: 64px auto;
-    border: 5px solid #999;
-    border-radius: 32px;
+    border: 10px solid transparent;
+    border-radius: 40px;
     overflow: hidden;
+    transition: all 200ms ease-in-out;
 }
 
 .background_banner {
     width: 100%;
-    height: 45%;
+    height: 350px;
     background-color: #aaa;
-    position: relative;
 }
 
-.avatar_banner {
+.avatar_banner div {
     width: 250px;
     height: 250px;
-    background-color: #888;
+    border: 10px solid white;
     border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -175px;
+    background-color: #888;
+    transition: all 200ms ease-in-out;
 }
 
 .infos_banner {
+    text-align: center;
     width: 100%;
     height: 55%;
     padding: 40px;
@@ -117,12 +116,24 @@ nav ul li a:hover {
 }
 
 .card_title_banner {
+    font-weight: normal;
     font-size: 64px;
+    transition: all 200ms ease-in-out;
 }
 
 .card_desc_banner {
     width: 85%;
     margin: 8px auto;
-    text-align: center;
     font-size: 32px;
+    transition: all 200ms ease-in-out;
+}
+
+.card_banner:hover,
+.card_banner:hover .avatar_banner div {
+    border: 10px solid var(--main-color);
+}
+
+.card_banner:hover .card_title_banner,
+.card_banner:hover .card_desc_banner {
+    color: var(--main-color);
 }
