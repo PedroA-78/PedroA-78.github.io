@@ -66,10 +66,63 @@ nav ul li a {
     letter-spacing: 0.5px;
     font-size: 32px;
     font-weight: bold;
-    color: #666;
+    color: #888;
     transition: all 300ms ease-in-out;
 }
 
 nav ul li a:hover {
     color: var(--main-color);
+}
+
+/* MAIN */
+
+/* BANNER */
+
+.card_banner {
+    width: 90%;
+    height: 700px;
+    margin: 64px auto;
+    border: 5px solid #999;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.background_banner {
+    width: 100%;
+    height: 45%;
+    background-color: #aaa;
+    position: relative;
+}
+
+.avatar_banner {
+    width: 250px;
+    height: 250px;
+    background-color: #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.infos_banner {
+    width: 100%;
+    height: 55%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card_title_banner {
+    font-size: 64px;
+}
+
+.card_desc_banner {
+    width: 85%;
+    margin: 8px auto;
+    text-align: center;
+    font-size: 32px;
 }
